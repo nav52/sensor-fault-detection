@@ -2,4 +2,6 @@ pymongo[srv]==4.2.0
 from-root
 scikit-learn==1.1.3
 pandas
+PyYAML
+scipy
 -e .
