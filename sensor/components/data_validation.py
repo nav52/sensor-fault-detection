@@ -1,5 +1,3 @@
-from cgi import test
-from email.mime import base
 from sensor.exception import SensorException
 from sensor.logger import logging
 from sensor.constant.training_pipeline import SCHEMA_FILE_PATH
