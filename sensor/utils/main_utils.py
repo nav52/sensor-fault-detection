@@ -49,3 +49,10 @@ def save_object(file_path:str, obj: object)->None:
         logging.info("Saved the object!!")
     except Exception as e:
         raise SensorException(e, sys)
+
+def load_object(file_path:str):
+    try:
+        with open(file_path, "wb") as file_obj:
+            dill.load(file_obj)
+    except Exception as e:
+        raise SensorException(e, sys)    
