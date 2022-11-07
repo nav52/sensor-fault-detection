@@ -1,6 +1,7 @@
 import os
 from sensor.constant.s3_bucket import TRAINING_BUCKET_NAME
 
+SAVED_MODEL_DIR = os.path.join("saved_models")
 # defining common constants for training pipeline
 TARGET_COLUMN = "class"
 PIPELINE_NAME:str = "sensor"
@@ -55,3 +56,9 @@ Model Evaluation Constants
 MODEL_EVALUATION_DIR_NAME: str = "model_evaluation"
 MODEL_EVALUATION_CHANGED_THRESHOLD_SCORE: float = 0.02
 MODEL_EVALUATION_REPORT_NAME: str = "report.yaml"
+
+"""
+Model Pusher Constants
+"""
+MODEL_PUSHER_DIR_NAME: str = "model_pusher"
+MODEL_PUSHER_SAVED_MODEL_DIR: str = SAVED_MODEL_DIR
