@@ -9,4 +9,5 @@ imblearn==0.0
 xgboost==1.6.2
 fastapi==0.78.0
 uvicorn==0.18.3
+certifi==2022.9.24
 -e .
