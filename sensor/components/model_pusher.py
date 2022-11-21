@@ -23,11 +23,11 @@ class ModelPusher:
             # Copy trained model to model pusher's model file path and saved model path
             model_file_path = self.model_pusher_config.model_file_path
             os.makedirs(os.path.dirname(model_file_path), exist_ok=True)
-            shutil.copy(src=trained_model_path, dest=model_file_path)
+            shutil.copy(src=trained_model_path, dst=model_file_path)
 
             saved_model_path = self.model_pusher_config.saved_model_path
             os.makedirs(os.path.dirname(saved_model_path), exist_ok=True)
-            shutil.copy(src=trained_model_path, dest=saved_model_path)
+            shutil.copy(src=trained_model_path, dst=saved_model_path)
 
             # Prepare the artifact
             model_pusher_artifact = ModelPusherArtifact(
