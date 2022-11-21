@@ -78,9 +78,6 @@ def main():
         print(e)
         logging.exception(e)
 
-
-
-
 if __name__ == '__main__':
     try:
         app_run(app, host=APP_HOST, port=APP_PORT)
